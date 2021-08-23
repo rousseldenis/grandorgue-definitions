@@ -1,49 +1,6 @@
-;------------------------------------------------------------------------------
-;     Organ definition file by (c) Michael P. Schmidt
-;     Sampleset: Uni surround for Hauptwerk 4 by Sonus Paradisi
-;     Version: 0.93 12/15/2019 for GrandOrgue V. 0.3.xx
-;------------------------------------------------------------------------------
-
-
-;Lizenzvereinbarung f�r die GrandOrgue ODF-Dateien
-
-;-------------------------------------------------
-
-;Copyright (c) 2019 Michael.P.Schmidt  admin(at)mps-orgelseite(dot)de  https://mps-orgelseite.de
-
-;Hiermit wird unentgeltlich, jeder Person, die eine Kopie der Software und der zugeh�rigen Dokumentationen (die "Software")
-;erh�lt, die Erlaubnis erteilt, sie uneingeschr�nkt zu benutzen, inklusive und ohne Ausnahme, dem Recht, sie zu verwenden,
-;kopieren, �ndern, fusionieren, verlegen, verbreiten, unterlizenzieren und/oder zu verkaufen, und Personen, die diese
-;Software erhalten, diese Rechte zu geben, unter den folgenden Bedingungen:
-
-;Der obige Urheberrechtsvermerk und dieser Erlaubnisvermerk sind in allen Kopien oder Teilkopien der Software beizulegen.
-
-;DIE SOFTWARE WIRD OHNE JEDE AUSDR�CKLICHE ODER IMPLIZIERTE GARANTIE BEREITGESTELLT,
-;EINSCHLIESSLICH DER GARANTIE ZUR BENUTZUNG F�R DEN VORGESEHENEN ODER EINEM BESTIMMTEN ZWECK SOWIE JEGLICHER RECHTSVERLETZUNG,
-;JEDOCH NICHT DARAUF BESCHR�NKT. IN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER F�R JEGLICHEN SCHADEN ODER SONSTIGE
-;ANSPR�CHE HAFTBAR ZU MACHEN, OB INFOLGE DER ERF�LLUNG EINES VERTRAGES, EINES DELIKTES ODER ANDERS IM ZUSAMMENHANG MIT DER
-;SOFTWARE ODER SONSTIGER VERWENDUNG DER SOFTWARE ENTSTANDEN.
-
-
-
-;License agreement for the GrandOrgue ODF-Files
-
-;----------------------------------------------
-
-;Copyright (c) 2019 Michael.P.Schmidt  admin(at)mps-orgelseite(dot)de  https://mps-orgelseite.de
-
-;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files
-;(the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify,
-;merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
-;furnished to do so, subject to the following conditions:
-
-;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-;THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-;OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
-;BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+; Copyright (c) 2019 Michael.P.Schmidt  admin(at)mps-orgelseite(dot)de  https://mps-orgelseite.de
+; Copyright 2021 Denis Roussel
+; License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 
 ;------------------------------------------------------------------------------
@@ -60,25 +17,25 @@ RecordingDetails=
 InfoFilename=
 
 NumberOfManuals=1
-HasPedals=Y
-NumberOfEnclosures=2
-NumberOfTremulants=2
-NumberOfWindchestGroups=2
+HasPedals=N
+NumberOfEnclosures=1
+NumberOfTremulants=1
+NumberOfWindchestGroups=1
 NumberOfReversiblePistons=0
 NumberOfGenerals=0
 NumberOfDivisionalCouplers=0
 NumberOfPanels=1
 NumberOfRanks=11
-NumberOfLabels=14
+NumberOfLabels=4
 NumberOfImages=3
-NumberOfSwitches=15
+NumberOfSwitches=14
 
 AmplitudeLevel=100
 Gain=0
 PitchTuning=0
 
 DispScreenSizeHoriz=1900
-DispScreenSizeVert=980
+DispScreenSizeVert=940
 
 DispDrawstopBackgroundImageNum=39
 DispConsoleBackgroundImageNum=39
@@ -103,8 +60,8 @@ DispButtonCols=10
 DispExtraButtonRows=0
 
 DispExtraPedalButtonRow=N
-DispExtraPedalButtonRowOffset=Y
-DispExtraPedalButtonRowOffsetRight=Y
+DispExtraPedalButtonRowOffset=N
+DispExtraPedalButtonRowOffsetRight=N
 
 DispButtonsAboveManuals=N
 DispTrimAboveManuals=Y
@@ -124,23 +81,8 @@ CombinationsStoreNonDisplayedDrawstops=N
 ;	Manual section
 ;------------------------------------------------------------------------------
 
-[Manual000]
-Name=Pedal
-NumberOfLogicalKeys=56
-FirstAccessibleKeyLogicalKeyNumber=001
-FirstAccessibleKeyMIDINoteNumber=36
-NumberOfAccessibleKeys=56
-MIDIInputNumber=001
-Displayed=Y
-NumberOfStops=0
-NumberOfCouplers=0
-NumberOfDivisionals=0
-NumberOfTremulants=1
-Tremulant001=001
-DispKeyColourInverted=N
-
 [Manual001]
-Name=Manual1
+Name=Positif
 NumberOfLogicalKeys=56
 FirstAccessibleKeyLogicalKeyNumber=001
 FirstAccessibleKeyMIDINoteNumber=36
@@ -161,10 +103,8 @@ Stop010=110
 NumberOfCouplers=0
 NumberOfDivisionals=0
 NumberOfTremulants=1
-Tremulant001=002
+Tremulant001=001
 DispKeyColourInverted=N
-
-
 
 ;------------------------------------------------------------------------------
 ;     Switches section
@@ -180,7 +120,7 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=75
 
 
@@ -193,7 +133,7 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=150
 
 
@@ -206,20 +146,20 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=225
 
 
 [Switch004]
-Name=IV-24 LArigot
-DispLabelText=IV-24 LArigot
+Name=IV-24 L'Arigot
+DispLabelText=IV-24 L'Arigot
 DispLabelFontSize=Large
 DispLabelColour=BLACK
 DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=300
 
 
@@ -232,7 +172,7 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=375
 
 
@@ -245,7 +185,7 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=450
 
 
@@ -258,7 +198,7 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=525
 
 
@@ -271,7 +211,7 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=600
 
 
@@ -284,7 +224,7 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=675
 
 
@@ -297,46 +237,34 @@ DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw-blk_on.png
 ImageOff=.\go-odf\sw-blk_off.png
-PositionX=1550
+PositionX=124
 PositionY=750
 
 [Switch011]
-Name=Trem. Ped
-DispLabelText=Trem. Ped
+Name=Trem. Pos.
+DispLabelText=Trem. Positif
 DispLabelFontSize=Large
 DispLabelColour=BLACK
 DefaultToEngaged=N
 Displayed=Y
 ImageOn=.\go-odf\sw_on.png
 ImageOff=.\go-odf\sw_off.png
-PositionX=75
-PositionY=900
+PositionX=244
+PositionY=75
 
 [Switch012]
-Name=Trem. I
-DispLabelText=Trem. I
-DispLabelFontSize=Large
-DispLabelColour=BLACK
-DefaultToEngaged=N
-Displayed=Y
-ImageOn=.\go-odf\sw_on.png
-ImageOff=.\go-odf\sw_off.png
-PositionX=300
-PositionY=900
-
-[Switch013]
 Name=Wind
 DefaultToEngaged=Y
 Displayed=N
 
 
-[Switch014]
+[Switch013]
 Name=Spiel- Traktur
 DefaultToEngaged=Y
 Displayed=N
 
 
-[Switch015]
+[Switch014]
 Name=Register- Traktur
 DefaultToEngaged=Y
 Displayed=N
@@ -353,18 +281,11 @@ Displayed=N
 ;------------------------------------------------------------------------------
 
 [WindchestGroup001]
-Name=Pedal
+Name=Positif
 NumberOfEnclosures=1
 Enclosure001=001
 NumberOfTremulants=1
 Tremulant001=001
-
-[WindchestGroup002]
-Name=Manual 1
-NumberOfEnclosures=1
-Enclosure001=002
-NumberOfTremulants=1
-Tremulant001=002
 
 
 
@@ -373,25 +294,17 @@ Tremulant001=002
 ;------------------------------------------------------------------------------
 
 [Enclosure001]
-Name=Pedal
-DispLabelText=Ped
-MIDIInputNumber=001
-AmpMinimumLevel=10
-
-[Enclosure002]
-Name=Manual 1
-DispLabelText=I
+Name=Positif
+DispLabelText=Pos
 MIDIInputNumber=002
 AmpMinimumLevel=10
-
-
 
 ;------------------------------------------------------------------------------
 ;     Tremulant section
 ;------------------------------------------------------------------------------
 
 [Tremulant001]
-Name=Tremulant Pedal
+Name=Tremulant Positif
 Function=And
 SwitchCount=1
 Switch001=011
@@ -400,19 +313,6 @@ AmpModDepth=12
 StartRate=80
 StopRate=80
 Displayed=N
-
-[Tremulant002]
-Name=Tremulant Manual 1
-Function=And
-SwitchCount=1
-Switch001=012
-Period=235
-AmpModDepth=12
-StartRate=80
-StopRate=80
-Displayed=N
-
-
 
 ;------------------------------------------------------------------------------
 ;     Coupler section
@@ -582,7 +482,7 @@ Rank001=010
 ;------------------------------------------------------------------------------
 
 [Label001]
-Name=MPS presents: Sonus Paradisi Giga-Demo
+Name=MPS presents: St Maximin Demo
 FreeXPlacement=Y
 FreeYPlacement=Y
 DispXpos=870
@@ -592,126 +492,26 @@ DispLabelFontSize=Small
 DispImageNum=4
 
 [Label002]
-Name=Pedal
+Name=Positif
 FreeXPlacement=Y
 FreeYPlacement=Y
-DispXpos=910
-DispYpos=911
+DispXpos=120
+DispYpos=30
 DispLabelColour=DARK YELLOW
 DispLabelFontSize=Large
 DispImageNum=1
 
 [Label003]
-Name=Manual I
+Name=Accessoires
 FreeXPlacement=Y
 FreeYPlacement=Y
-DispXpos=910
-DispYpos=777
+DispXpos=240
+DispYpos=30
 DispLabelColour=DARK YELLOW
 DispLabelFontSize=Large
 DispImageNum=1
 
 [Label004]
-Name=Manual II
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=910
-DispYpos=705
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label005]
-Name=Manual III
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=910
-DispYpos=633
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label006]
-Name=Manual IV
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=910
-DispYpos=561
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label007]
-Name=Manual V
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=910
-DispYpos=489
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label008]
-Name=Pedal
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=110
-DispYpos=30
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label009]
-Name=Manual I
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=333
-DispYpos=30
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label010]
-Name=Manual II
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=561
-DispYpos=30
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label011]
-Name=Manual III
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=1259
-DispYpos=30
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label012]
-Name=Manual IV
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=1471
-DispYpos=30
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label013]
-Name=Manual V
-FreeXPlacement=Y
-FreeYPlacement=Y
-DispXpos=1721
-DispYpos=30
-DispLabelColour=DARK YELLOW
-DispLabelFontSize=Large
-DispImageNum=1
-
-[Label014]
 Name=with a permission of:
 FreeXPlacement=Y
 FreeYPlacement=Y
@@ -815,7 +615,7 @@ Name=St.Maximin Trompette
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=8
@@ -1438,7 +1238,7 @@ Name=St.Maximin Cornet
 FirstMidiNoteNumber=60
 NumberOfLogicalPipes=27
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=4
@@ -1773,7 +1573,7 @@ Name=St.Maximin Fourniture
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 Pipe001=.\000843\pipe_pos\fourniture\036-C.wav
@@ -2442,11 +2242,11 @@ Pipe051HarmonicNumber=16
 
 
 [Rank004]
-Name=St.Maximin L�Arigot
+Name=St.Maximin L'Arigot
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=2
@@ -3069,7 +2869,7 @@ Name=St.Maximin Nasard
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=24
@@ -3692,7 +3492,7 @@ Name=St.Maximin Quarte
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=2
@@ -4315,7 +4115,7 @@ Name=St.Maximin Doublette
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=32
@@ -4938,7 +4738,7 @@ Name=St.Maximin Prestant
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=16
@@ -5561,7 +5361,7 @@ Name=St.Maximin Montre
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=8
@@ -6184,7 +5984,7 @@ Name=St.Maximin Bourdon
 FirstMidiNoteNumber=36
 NumberOfLogicalPipes=51
 AmplitudeLevel=100
-WindchestGroup=002
+WindchestGroup=001
 Percussive=N
 PitchTuning=0
 HarmonicNumber=8

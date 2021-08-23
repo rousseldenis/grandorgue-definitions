@@ -1,6 +1,10 @@
 # Folders
 prytanee/OrganInstallationPackages/002300
-st-maximin/
+st-maximin/*
 
 # Includes definitions - To be updated at insert
 !StMaximin.organ
+!st-maximin
+st-maximin/OrganInstallationPackages/*
+!st-maximin/OrganInstallationPackages
+!st-maximin/OrganInstallationPackages/go-odf
